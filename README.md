@@ -18,6 +18,7 @@ Sql.js predates WebAssembly, and thus started as an [asm.js](https://en.wikipedi
 
 ## Customizations
 
+- remove extension-functions from build
 - enable FTS4
 - enable R-Tree
 

@@ -213,11 +213,12 @@ Module["onRuntimeInitialized"] = function onRuntimeInitialized() {
         "",
         ["number", "string", "number"]
     );
-    var registerExtensionFunctions = cwrap(
-        "RegisterExtensionFunctions",
-        "number",
-        ["number"]
-    );
+    // custom extension functions may be wrapped here in the future:
+    // var registerExtensionFunctions = cwrap(
+    //     "RegisterExtensionFunctions",
+    //     "number",
+    //     ["number"]
+    // );
 
     /**
     * @classdesc
@@ -656,7 +657,8 @@ Module["onRuntimeInitialized"] = function onRuntimeInitialized() {
         }
         this.handleError(sqlite3_open(this.filename, apiTemp));
         this.db = getValue(apiTemp, "i32");
-        registerExtensionFunctions(this.db);
+        // custom extension functions may be enabled here in the future:
+        // registerExtensionFunctions(this.db);
         // A list of all prepared statements of the database
         this.statements = {};
         // A list of all user function of the database
