@@ -1,8 +1,10 @@
-# SQLite compiled to JavaScript <img src="https://user-images.githubusercontent.com/552629/76405509-87025300-6388-11ea-86c9-af882abb00bd.png" width="40" height="40" />
+# SQLite compiled to JavaScript with customizations <img src="https://user-images.githubusercontent.com/552629/76405509-87025300-6388-11ea-86c9-af882abb00bd.png" width="40" height="40" />
 
+<!--
 [![CI status](https://github.com/sql-js/sql.js/workflows/CI/badge.svg)](https://github.com/sql-js/sql.js/actions)
 [![npm](https://img.shields.io/npm/v/sql.js)](https://www.npmjs.com/package/sql.js)
 [![CDNJS version](https://img.shields.io/cdnjs/v/sql.js.svg)](https://cdnjs.com/libraries/sql.js)
+-->
 
 For the impatients, try the demo here: https://sql-js.github.io/sql.js/examples/GUI/
 
@@ -14,6 +16,10 @@ SQLite is public domain, sql.js is MIT licensed.
 
 Sql.js predates WebAssembly, and thus started as an [asm.js](https://en.wikipedia.org/wiki/Asm.js) project. It still supports asm.js for backwards compatibility.
 
+## Customizations
+
+- enable FTS4
+- enable R-Tree
 
 ## Documentation
 A [full documentation](https://sql-js.github.io/sql.js/documentation/class/Database.html) generated from comments inside the source code, is available.
